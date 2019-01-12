@@ -1,0 +1,22 @@
+<div class="header-container-desktop noselect">
+  <img src="assets/images/logo.svg" [routerLink]="['/']">
+  <div class="link-button" [ngClass]="{'active': route === '/about'}" [routerLink]="['/about']">About Us</div>
+  <div class="link-button" [ngClass]="{'active': route === '/strategy'}" [routerLink]="['/strategy']">Strategy</div>
+  <div class="link-button" [ngClass]="{'active': route === '/team'}" [routerLink]="['/team']">Our Team</div>
+  <div class="link-button" [ngClass]="{'active': route === '/contact'}" [routerLink]="['/contact']">Contact Us</div>
+</div>
+
+<div class="header-container-mobile noselect">
+  <img class="left" src="assets/images/kiriMobile.svg" [routerLink]="['/']">
+  <img class="right" src="assets/images/burger.svg" (click)="menuHandler()">
+</div>
+<div class="menu-container" *ngIf="showMenu" (click)="menuHandler()">
+  <div class="menu">
+    <div class="link" [ngClass]="{'active': route === '/'}" [routerLink]="['/']">Home</div>
+    <div class="link" [ngClass]="{'active': route === '/about'}" [routerLink]="['/about']">About Us</div>
+    <div class="link" [ngClass]="{'active': route === '/strategy'}" [routerLink]="['/strategy']">Strategy</div>
+    <div class="link" [ngClass]="{'active': route === '/team'}" [routerLink]="['/team']">Our Team</div>
+    <div class="link" [ngClass]="{'active': route === '/contact'}" [routerLink]="['/contact']">Contact Us</div>
+    <p class="close">close</p>
+  </div>
+</div>

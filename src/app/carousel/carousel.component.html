@@ -1,0 +1,12 @@
+<div class="carousel-container">
+  <img *ngIf="selected === 0" src="assets/images/0.jpg" class="show">
+  <img *ngIf="selected === 1" src="assets/images/1.jpg" class="show">
+  <img *ngIf="selected === 2" src="assets/images/2.jpg" class="show">
+  <img *ngIf="selected === 3" src="assets/images/3.jpg" class="show">
+  <div class="dot-container">
+    <span class="dot" [ngClass]="{'active-dot': selected === 0}"></span>
+    <span class="dot" [ngClass]="{'active-dot': selected === 1}"></span>
+    <span class="dot" [ngClass]="{'active-dot': selected === 2}"></span>
+    <span class="dot" [ngClass]="{'active-dot': selected === 3}"></span>
+  </div>
+</div>

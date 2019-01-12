@@ -1,0 +1,48 @@
+@import '../../styles/styles';
+.footer-container{
+  width: 100%;
+  height: $footer-height;
+  background-color: black;
+  img {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 8*3px 8*3px 8*2px;
+    box-sizing: border-box;
+    h3 {
+      font-size: 12px;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 10px;
+      font-weight: lighter;
+      line-height: 15px;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-container{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    padding-left: 8*3px;
+    padding-right: 8*3px;
+    box-sizing: border-box;
+    img {
+      height: 100%;
+      display: block;
+    }
+  }
+}
