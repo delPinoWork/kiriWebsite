@@ -2,23 +2,24 @@
 
 .home-container {
   width: 100%;
-  p{
-    margin-top: 8*4px;
-    width: 100%;
-    padding-left: 8*2px;
-    padding-right: 8*2px;
-    box-sizing: border-box;
-    line-height: 8*3px;
-    text-align: justify;
+  .text-container {
+    text-align: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .home-container {
     margin-bottom: $footer-height + 8*2px;
-    p {
-      width: 70%;
-      padding: 0;
+    .text-container {
+      height: 150px;
+      width: 100%;
+      display: flex;
+      text-align: left;
+      justify-content: space-evenly;
+      align-items: center;
+      h2 {
+        margin: 0;
+      }
     }
   }
 }
